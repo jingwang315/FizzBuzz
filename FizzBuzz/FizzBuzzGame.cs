@@ -8,7 +8,14 @@ namespace FizzBuzz
         {
             if (givenNumber % 3 == 0)
             {
-                return "Fizz";
+                if (givenNumber % 5 == 0)
+                {
+                    return "FizzBuzz";
+                }
+                else
+                {
+                    return "Fizz";
+                }
             }
             else if (givenNumber % 5 == 0)
             {
