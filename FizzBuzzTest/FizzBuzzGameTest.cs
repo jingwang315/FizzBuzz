@@ -26,5 +26,16 @@ namespace FizzBuzzTest
             //Then
             Assert.Equal("Fizz", result);
         }
+
+        [Fact]
+        public void Should_return_Buzz_when_countOff_given_multiple_of_5()
+        {
+            // Given
+            int givenNumber = 5;
+            // When
+            string result = FizzBuzzGame.CountOff(givenNumber);
+            //Then
+            Assert.Equal("Buzz", result);
+        }
     }
 }
